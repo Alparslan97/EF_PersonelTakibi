@@ -51,6 +51,7 @@
             this.metroLabel7 = new MetroFramework.Controls.MetroLabel();
             this.metroLabel8 = new MetroFramework.Controls.MetroLabel();
             this.metroLink1 = new MetroFramework.Controls.MetroLink();
+            this.lnkPersonelOlustur = new MetroFramework.Controls.MetroLink();
             ((System.ComponentModel.ISupportInitialize)(this.pcbImageUrl)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.metroPanel1.SuspendLayout();
@@ -77,6 +78,7 @@
             this.pcbImageUrl.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pcbImageUrl.TabIndex = 9;
             this.pcbImageUrl.TabStop = false;
+            this.pcbImageUrl.DoubleClick += new System.EventHandler(this.PcbImageUrl_DoubleClick);
             // 
             // metroLabel4
             // 
@@ -428,11 +430,24 @@
             this.metroLink1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.metroLink1.UseSelectable = true;
             // 
+            // lnkPersonelOlustur
+            // 
+            this.lnkPersonelOlustur.Location = new System.Drawing.Point(160, 469);
+            this.lnkPersonelOlustur.Margin = new System.Windows.Forms.Padding(4);
+            this.lnkPersonelOlustur.Name = "lnkPersonelOlustur";
+            this.lnkPersonelOlustur.Size = new System.Drawing.Size(188, 28);
+            this.lnkPersonelOlustur.TabIndex = 12;
+            this.lnkPersonelOlustur.Text = "Personel Oluştur";
+            this.lnkPersonelOlustur.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lnkPersonelOlustur.UseSelectable = true;
+            this.lnkPersonelOlustur.Click += new System.EventHandler(this.LnkPersonelOlustur_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(981, 526);
+            this.Controls.Add(this.lnkPersonelOlustur);
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.pcbImageUrl);
             this.Controls.Add(this.groupBox1);
@@ -475,6 +490,7 @@
         private MetroFramework.Controls.MetroLabel metroLabel7;
         private MetroFramework.Controls.MetroLabel metroLabel8;
         private MetroFramework.Controls.MetroLink metroLink1;
+        private MetroFramework.Controls.MetroLink lnkPersonelOlustur;
     }
 }
 
